@@ -6,8 +6,8 @@ import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 
 const Contact = () => (
   <div css={css`
-      padding: 8px 7vw 8px 4vw;
-        max-width: 100%;
+      padding: 8px 1.5rem 8px 1.5rem;
+      max-width: 100%;
   `}>
   
     <a
