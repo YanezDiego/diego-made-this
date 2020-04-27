@@ -1,17 +1,23 @@
-import React, { useState }  from 'react'
+import React  from 'react'
 import { css } from '@emotion/core'
 import Fade from 'react-reveal/Fade'
-import { Button } from '@material-ui/core'
-
+import { Button, Container, Grid } from '@material-ui/core'
+import Contact from "./contact"
 
 import {Link} from 'gatsby'
 
-const Intro = () => 
-
-    (
+const Intro = () => (
         
-            <div className='intro'>
+       <>
+           <Container maxWidth="sm">
+            {/* <Grid container xs={12} m={6} align="center" spacing={1} className="intro"> */}
+            <Grid item xs={12}>
+             <div className="text" css={css`
+                padding: 29%  18px 1.5rem 4rem;
+                maxWidth: 100%
+             `}>
             <Fade>
+               
                 <h1 css={css`
                 font-family: 
                 'Merriweather', serif,
@@ -21,19 +27,28 @@ const Intro = () =>
                 'Francois One', sans - serif;
                 `}>Welcome, I am Diego</h1>
                 <p>🗽 NYC is my home, <b>Coding</b> is my passion</p>
+                
             </Fade>
+            </div>
             <div css={css`
-                padding: 0 8vw 0 8vw;
+                   padding: 0px 16vw 1vw 13vw;
+                    width: 100%;
             `}>
-            <Button variant='contained' orientation="center" color="primary">
+            <Button variant='contained' orientation="center" color="primary" >
             <Link to='/project' 
                 css={css`
                     text-decoration: none;
                     color:white;
-                `}>Project</Link></Button>
+                `}>Projects</Link></Button>
             </div>
+            </Grid>
             
-            </div>
+
+            <Contact/>
+
+            {/* </Grid> */}
+            </Container>
+        </> 
         
     )
 
