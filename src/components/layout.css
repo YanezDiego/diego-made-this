@@ -670,9 +670,9 @@ pre tt:after {
     font-size: 100%;
   }
 }
-.intro{
-  margin: 20vw;
-  width: 45rem;
+.project{
+     margin: 5rem;
+     max-width: 100%;
 }
 
 .contactLink{
