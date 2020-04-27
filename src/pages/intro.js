@@ -13,7 +13,7 @@ const Intro = () => (
             {/* <Grid container xs={12} m={6} align="center" spacing={1} className="intro"> */}
             <Grid item xs={12}>
              <div className="text" css={css`
-                padding: 29%  18px 1.5rem 4rem;
+                padding: 25%  0.5rem 0.04rem;
                 maxWidth: 100%
              `}>
             <Fade>
@@ -25,13 +25,14 @@ const Intro = () => (
                 sans - serif,'Pacifico', 
                 cursive,'Josefin Slab', serif, 
                 'Francois One', sans - serif;
-                `}>Welcome, I am Diego</h1>
-                <p>🗽 NYC is my home, <b>Coding</b> is my passion</p>
+                `}>Welcome, My Name is Diego</h1>
+                <p><span role="img">🗽</span> NYC is my home.</p>
+                <p><span role="img">👨‍💻</span> <b>Coding</b> feels like living in NYC.</p>
                 
             </Fade>
             </div>
             <div css={css`
-                   padding: 0px 16vw 1vw 13vw;
+                   padding: 4px 10.25rem .5rem 10.25rem;
                     width: 100%;
             `}>
             <Button variant='contained' orientation="center" color="primary" >
