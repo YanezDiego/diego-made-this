@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import { CssBaseline } from "@material-ui/core"
 // import Header from "./header"
 
 import "./layout.css"
@@ -26,19 +26,15 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      />
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <CssBaseline>
         <main>{children}</main>
-        <footer>
-          © DiegoMadethis With &hearts;.
-        </footer>
-      </div>
+        <footer>© DiegoMadethis With &hearts;.</footer>
+      </CssBaseline>
     </>
   )
 }
