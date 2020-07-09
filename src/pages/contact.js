@@ -5,38 +5,41 @@ import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 
 const Contact = () => (
-  <div css={css`
-      padding: 8px 1.5rem 8px 1.5rem;
-      max-width: 100%;
-  `}>
-  
+  <div
+    css={css`
+      padding-top: 1.1rem;
+      
+    `}
+  >
     <a
-     className = "contactLink"
+      className="contactLink"
       href="https://www.linkedin.com/in/diegosyanez/"
       target="_blank"
       rel="noopener noreferrer"
     >
-    <FontAwesomeIcon icon={faLinkedin} size="2x"/>
+      <FontAwesomeIcon icon={faLinkedin} size="2x" />
     </a>
-  
+
     <a
-    className = "contactLink"
+      className="contactLink"
       href="https://github.com/YanezDiego"
       target="_blank"
       rel="noopener noreferrer"
+      css={css`
+        text-decoration: none;
+      `}
     >
       <FontAwesomeIcon icon={faGithub} size="2x" />
     </a>
-  
+
     <a
-    className = "contactLink"
+      className="contactLink"
       href="mailto:diegosyanez92@gmail.com"
       target="_blank"
       rel="noopener noreferrer"
     >
       <FontAwesomeIcon icon={faEnvelope} size="2x" />
     </a>
-  
   </div>
 )
 
