@@ -1,4 +1,29 @@
-html {
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+}
+
+
+.project{
+  max-width: 800px;
+}
+
+footer{
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+  width: 100vw;
+  
+}
+
+/* html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -674,9 +699,14 @@ pre tt:after {
      margin: 5rem;
      max-width: 100%;
 }
-
+*/
 .contactLink{
       margin: 1vw;
       align-items: center;
       padding: 2.5vw;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+  color: darkblue;
 }
