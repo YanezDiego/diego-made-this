@@ -23,6 +23,17 @@ footer{
   
 }
 
+.contactLink {
+  margin: 1vw;
+  align-items: center;
+  padding: 2.5vw;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+  color: darkblue;
+}
+
 /* html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -700,13 +711,3 @@ pre tt:after {
      max-width: 100%;
 }
 */
-.contactLink{
-      margin: 1vw;
-      align-items: center;
-      padding: 2.5vw;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-  color: darkblue;
-}
